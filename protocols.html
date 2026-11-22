@@ -40,10 +40,12 @@
           <h1>The rules, as composable modules.</h1>
           <p class="lede">
             A protocol is a set of actions with its own slice of game state. A Game Master picks
-            the protocols it needs from gm-lib and adds its own. The Js runs eight of them.
+            the protocols it needs from gm-lib and adds its own. The Js runs eight of them;
+            Agents of Mind runs eight from gm-lib plus two of its own.
           </p>
           <div class="legend" aria-label="Status legend">
-            <span><span class="badge badge-live">Live</span> running in The Js</span>
+            <span><span class="badge badge-live">Live</span> running in a live game</span>
+            <span><span class="badge badge-progress">Preview</span> live, with commerce in preview</span>
             <span><span class="badge badge-lib">In gm-lib</span> built and tested, not yet in a live game</span>
             <span><span class="badge badge-planned">Planned</span> designed, not built</span>
           </div>
@@ -78,7 +80,7 @@
             <ul>
               <li>Stable <code>?ref=</code> codes; every click is a recorded touch</li>
               <li>Pool share, attribution window, payout hold and recruiter override are all policy settings</li>
-              <li>Pluggable weighting algorithm (The Js uses an equal split over 30 days)</li>
+              <li>Pluggable weighting algorithm (today: an equal split among recent referrers)</li>
               <li>Queries for earnings, chain preview and referral graph</li>
             </ul>
             <a class="card-link" href="how-it-works.html">How attribution works →</a>
@@ -134,8 +136,27 @@
             </ul>
           </article>
           <article class="card">
-            <div class="card-head"><h3>Discoverability</h3><span class="badge badge-lib">In gm-lib</span></div>
-            <p>Publishes a game's public pages as clean Markdown, metadata and structured data, so search engines and outside AI agents can read them.</p>
+            <div class="card-head"><h3>Discoverability</h3><span class="badge badge-live">Live</span></div>
+            <p>Publishes a game's public pages as clean Markdown, metadata and structured data, so search engines and outside AI agents can read them. Agents of Mind uses it, with operator approval of what goes public.</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Custom · Agents of Mind</p>
+            <div class="card-head"><h3>Seller agreement</h3><span class="badge badge-progress">Preview</span></div>
+            <p>Brings outside companies in as sellers, on signed terms.</p>
+            <ul>
+              <li>Sellers accept a versioned agreement, stored with a hash of the exact text</li>
+              <li>Operators draft private commercial terms and publish them as a fixed, versioned offer</li>
+              <li>A named signer accepts; operators review and activate the seller</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="kicker">Custom · Agents of Mind</p>
+            <div class="card-head"><h3>Storefront</h3><span class="badge badge-progress">Preview</span></div>
+            <p>Gives each seller a branded store inside the game.</p>
+            <ul>
+              <li>Public name, tagline, description and logo</li>
+              <li>Website links, support email and brand colours</li>
+            </ul>
           </article>
           <article class="card">
             <div class="card-head"><h3>Prediction market</h3><span class="badge badge-planned">Planned</span></div>
@@ -206,6 +227,7 @@
               <li><a href="blog.html">Blog</a></li>
               <li><a href="https://BookOfAgents.com" target="_blank" rel="noreferrer">Book of Agents</a></li>
               <li><a href="https://www.jointhejs.com" target="_blank" rel="noreferrer">The Js</a></li>
+              <li><a href="https://agentsofmind.com" target="_blank" rel="noreferrer">Agents of Mind</a></li>
             </ul>
           </div>
           <div>

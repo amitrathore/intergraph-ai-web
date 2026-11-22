@@ -263,6 +263,10 @@ pre {
   border-top: 1px solid var(--line);
 }
 
+section[id] {
+  scroll-margin-top: 72px; /* clear the sticky header on anchor jumps */
+}
+
 .section-alt {
   background: var(--bg-2);
 }
