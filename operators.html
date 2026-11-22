@@ -214,39 +214,42 @@
             <p class="kicker">Case study</p>
             <h2>Inside Highway One</h2>
             <p class="lede">
-              A marketplace for collector vehicles, whose mission is to place significant cars
-              with responsible next stewards. The cars change hands off-platform, so the game
-              governs who has the authority to sell rather than the payment.
+              A marketplace for collector vehicles, whose mission is to preserve, understand,
+              find and place significant cars with responsible next stewards. It started as a
+              working marketplace and is becoming an Intergraph game one stage at a time, with
+              each feature switched on separately.
             </p>
-            <div class="actions" style="margin-top: 1rem">
-              <span class="badge badge-progress">Marketplace live · Mandate in pilot</span>
-            </div>
           </div>
           <div class="grid grid-3">
             <article class="card">
-              <h3>Real inventory today</h3>
+              <div class="card-head"><h3>Inventory and showrooms</h3><span class="badge badge-live">Live</span></div>
               <p>Dealer inventory is gathered into searchable showrooms. Buyer inquiries go straight to the dealer, and every inquiry is recorded.</p>
             </article>
             <article class="card">
-              <h3>A grounded AI concierge</h3>
+              <div class="card-head"><h3>A grounded AI concierge</h3><span class="badge badge-live">Live</span></div>
               <p>Buyers can ask an AI concierge for help. It searches the live inventory and only recommends cars that the search actually returned.</p>
             </article>
             <article class="card">
-              <h3>Owner-to-dealer mandates</h3>
-              <p>A car owner asks approved dealers to represent a vehicle. A request is not yet authority to sell; that comes only from an accepted mandate.</p>
+              <div class="card-head"><h3>Consignment</h3><span class="badge badge-progress">Pilot</span></div>
+              <p>An owner asks approved dealers to sell a car. Through the Mandate protocol they agree versioned terms, and the dealer can list the car and take offers only while the mandate is active. The sale closes off-platform, on a private record.</p>
             </article>
             <article class="card">
-              <h3>Negotiated, versioned terms</h3>
-              <p>Dealers propose terms and owners can counter. The owner accepts an exact revision, and can later suspend, resume or revoke the mandate.</p>
+              <div class="card-head"><h3>Hosted dealer sites</h3><span class="badge badge-lib">Built</span></div>
+              <p>Dealers get their own site on a Highway One subdomain or their own domain, approved by an operator, and can claim their listed cars to edit them.</p>
             </article>
             <article class="card">
-              <h3>Every listing is backed</h3>
-              <p>A dealer can list the car and take offers only under an active mandate. Suspending or revoking it withdraws the listing. Private details such as the reserve price stay out of the protocol.</p>
+              <div class="card-head"><h3>Private-seller ads</h3><span class="badge badge-lib">Built</span></div>
+              <p>Owners selling a car themselves can buy an advertising package through Stripe. A dealer reviews each ad before it's published, and buyer inquiries go straight to the owner.</p>
             </article>
             <article class="card">
-              <h3>Off-platform closing, on the record</h3>
-              <p>The sale closes off-platform. A private closing record ties it to the accepted offer and mandate, and the owner confirms receipt of payment.</p>
+              <div class="card-head"><h3>Coselling</h3><span class="badge badge-lib">Built</span></div>
+              <p>Members accept versioned terms, share referral links, follow their attribution in a dashboard and withdraw through Stripe Connect.</p>
             </article>
+          </div>
+          <div class="legend" aria-label="Status legend">
+            <span><span class="badge badge-live">Live</span> in production</span>
+            <span><span class="badge badge-progress">Pilot</span> in production for a pilot group</span>
+            <span><span class="badge badge-lib">Built</span> built and tested, not yet switched on</span>
           </div>
         </div>
       </section>

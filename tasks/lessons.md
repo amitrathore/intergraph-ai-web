@@ -20,3 +20,18 @@ records what happened, holds the money in the ledger and settles whatever the GM
    and others are reusable protocols that a game can use, tune or replace with its own.
 4. **Percentages, windows and holds are settings.** Present them as a game's policy, never
    as Intergraph-wide numbers.
+
+## A case study describes the whole product, not one protocol (2026-11-22)
+
+**Context**: The first Highway One case study was almost entirely about the Mandate
+protocol, because Mandate was the newest and most distinctive piece. The user corrected
+this: Highway One is a collector-vehicle marketplace, and Mandate is one feature of it.
+
+### Rules
+
+1. **Lead with what the product is and does for its users.** Then show how the Intergraph
+   game layer fits in. A protocol is never the headline of a case study.
+2. **Cover the product's range.** List the live features, the pilots and the features
+   that are built but switched off, each with its own status badge.
+3. **Verify feature claims against the release docs.** Check which feature flags are on
+   and what is gated (payment, settlement, review) before describing how a feature works.
