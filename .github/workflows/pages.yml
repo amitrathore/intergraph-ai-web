@@ -31,7 +31,7 @@ jobs:
       - name: Stage site files
         run: |
           mkdir _site
-          cp -r *.html styles.css script.js assets CNAME .nojekyll _site/
+          cp -r *.html styles.css script.js favicon.ico site.webmanifest assets CNAME .nojekyll _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
