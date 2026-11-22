@@ -20,7 +20,7 @@ The header and footer are repeated in every page. If you change them, change all
 
 Every capability claim carries one of these badges:
 - `badge-live`: running in The Js
-- `badge-lib`: built and tested in gm-lib, not enabled in a live game
+- `badge-lib` (shown as "Built"): built and tested, not yet switched on
 - `badge-progress`: being built now
 - `badge-planned`: on the roadmap
 
