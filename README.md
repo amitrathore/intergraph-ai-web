@@ -1,6 +1,6 @@
 # intergraph-ai-web
 
-The marketing site for [intergraph.ai](https://intergraph.ai). It is plain HTML, CSS and JS with no build step, deployed to GitHub Pages on push to `main` (`.github/workflows/pages.yml`). The workflow publishes only the site files: the pages, `styles.css`, `script.js`, `assets/`, `CNAME` and `.nojekyll`. Repository notes such as this README and `tasks/` are not published. If you add a new top-level site file, add it to the workflow's "Stage site files" step.
+The marketing site for [intergraph.ai](https://intergraph.ai). It is plain HTML, CSS and JS with no build step, deployed to GitHub Pages on push to `main` (`.github/workflows/pages.yml`). The workflow publishes only the site files: the pages, `styles.css`, `script.js`, `favicon.ico`, `site.webmanifest`, `assets/`, `CNAME` and `.nojekyll`. Repository notes such as this README and `tasks/` are not published. If you add a new top-level site file, add it to the workflow's "Stage site files" step.
 
 ## Pages
 
