@@ -35,3 +35,15 @@ this: Highway One is a collector-vehicle marketplace, and Mandate is one feature
    that are built but switched off, each with its own status badge.
 3. **Verify feature claims against the release docs.** Check which feature flags are on
    and what is gated (payment, settlement, review) before describing how a feature works.
+
+## Plans cover only the immediate step (2026-11-22)
+
+**Context**: When planning a small follow-up (attaching a repo), the plan file still carried
+every earlier, completed plan below the new one. The user rejected it: only the immediate
+plan should be shown.
+
+### Rules
+
+1. **Rewrite the plan file for each new task.** Don't prepend new plans to old ones. Past
+   plans are history and live in git and the conversation, not the plan.
+2. **Size the plan to the task.** A one-step task gets a few lines.
