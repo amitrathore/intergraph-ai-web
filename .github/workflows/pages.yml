@@ -27,10 +27,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # Publish only the site itself; repo notes (README.md, tasks/) stay private.
+      - name: Stage site files
+        run: |
+          mkdir _site
+          cp -r *.html styles.css script.js assets CNAME .nojekyll _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy
         id: deployment
