@@ -126,38 +126,51 @@
         <div class="wrap">
           <div class="section-head">
             <p class="eyebrow">Follow the money</p>
-            <h2>How a sale pays everyone who helped.</h2>
+            <h2>Every game writes its own attribution rules.</h2>
             <p class="lede">
-              The figures below are The Js defaults. Each game sets its own policy, and the GM
-              validates it.
+              Who gets credit, and how value is split, is part of each game's rules. MoM does
+              not hard-code a model. It records what happened, holds the money, and pays out
+              whatever the Game Master decides.
             </p>
           </div>
-          <ol class="flow">
-            <li>
-              <strong>A coseller shares a link</strong>
-              <p>Each coseller has a stable <code>?ref=</code> code. Every click is recorded as a touch, and an anonymous visitor's touches are kept when they sign in.</p>
-            </li>
-            <li>
-              <strong>The buyer checks out</strong>
-              <p>Payment runs through Stripe. The charge goes ahead only once a merchant of record is resolved. Coseller attribution never changes the buyer's price or the seller's net.</p>
-            </li>
-            <li>
-              <strong>A hold protects against returns</strong>
-              <p>The commission becomes eligible once the buyer confirms receipt, or 30 days after payment, whichever comes first.</p>
-            </li>
-            <li>
-              <strong>The commission is split</strong>
-              <p>80% of the order's commission becomes the coseller pool. It is shared equally among every distinct coseller who touched the buyer in the last 30 days. Largest-remainder rounding makes the splits add up exactly. Of what the platform keeps, 20% goes to Intergraph.</p>
-            </li>
-            <li>
-              <strong>Recruiters earn an override</strong>
-              <p>5% of each coseller's share passes up to the coseller who recruited them, and so on up the chain. It is a re-split of the pool and never a new cost.</p>
-            </li>
-            <li>
-              <strong>Players withdraw</strong>
-              <p>Balances are reserved, paid out through a Stripe Connect transfer, then settled or reversed in the ledger.</p>
-            </li>
-          </ol>
+          <div class="split">
+            <ol class="flow">
+              <li>
+                <strong>Contributions are recorded</strong>
+                <p>The GM records the events that count in your game, such as a referral, a published post, an introduction or a fulfilled order.</p>
+              </li>
+              <li>
+                <strong>Value arrives</strong>
+                <p>A sale or other payment lands through Stripe, under a resolved merchant of record, and is held in the game's ledger.</p>
+              </li>
+              <li>
+                <strong>Your rule decides the split</strong>
+                <p>Your protocol turns those contributions into ledger entries, with whatever weights, windows, holds and overrides the game defines.</p>
+              </li>
+              <li>
+                <strong>The ledger settles it</strong>
+                <p>MoM applies the split as one balanced, idempotent batch. Players can then withdraw through Stripe Connect.</p>
+              </li>
+            </ol>
+            <article class="card">
+              <p class="kicker">One example · The Js</p>
+              <h3>Coselling attribution</h3>
+              <p>
+                The Js pays its community for driving sales, using the coseller protocol from
+                gm-lib with these settings:
+              </p>
+              <ul>
+                <li>Each coseller gets a <code>?ref=</code> link, and every click is recorded as a touch.</li>
+                <li>80% of an order's commission forms a pool, shared equally among everyone who referred the buyer in the last 30 days.</li>
+                <li>5% of each share passes up to the coseller's recruiter.</li>
+                <li>Payout waits for the buyer to confirm receipt, or for 30 days to pass.</li>
+              </ul>
+              <p>
+                Another game could weight the first or last touch, reward content instead of
+                links, or write an entirely different model.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
